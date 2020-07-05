@@ -12,7 +12,12 @@ export default class RestoService {
     }
 
     getMenuItems = async () => {
-        const res = await this.getResource(`/menu`);
+        const res = await this.getResource(`/menu/`);
+        return res;
+    }
+
+    getMenuItem = async(id) => {
+        const res = await this.getResource(`/menu/${id}`);
         return res;
     }
 }

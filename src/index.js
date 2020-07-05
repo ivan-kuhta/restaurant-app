@@ -9,6 +9,7 @@ import RestoServiceContext from './components/resto-service-context';
 import store from './store';
 
 import './index.scss';
+import '@fortawesome/fontawesome-free/css/all.css';
 
 const restoService = new RestoService();
 
