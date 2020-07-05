@@ -3,6 +3,8 @@ import {MainPage, CartPage} from '../pages';
 import AppHeader from '../app-header';
 import WithRestoService from '../hoc';
 
+import {Route, Switch} from 'react-router-dom';
+
 import Background from './food-bg.jpg';
 
 const App = ({RestoService}) => {
@@ -10,8 +12,10 @@ const App = ({RestoService}) => {
     return (
         <div style={{background: `url(${Background}) center center/cover no-repeat`}} className="app">
             <AppHeader total={50}/>
-            <MainPage/>
-            <CartPage/>
+            <Switch>
+                <Route path='/' exact><MainPage/></Route>
+                <Route path='/cart' exact><CartPage/></Route>
+            </Switch>
         </div>
     )
 }
