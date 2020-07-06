@@ -42,8 +42,30 @@
         right: -10px;
         color: #fff;
         font-size: 20px;
+        line-height: 1;
         border-radius: 100%;
         border: 1px solid #fff;
         cursor: pointer;
+        transition: .4s;
+    }
+    &__close:hover{
+        transform: scale(1.4);
+    }
+    .order{
+        display: block;
+        margin: 30px auto 0px auto;
+        border-radius: 20px;
+        background-color: green;
+        border: none;
+        font-weight: bold;
+        font-size: 14px;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        outline: none;
+        transition: .4s;
+    }
+    .order:hover{
+        background-color: orange
     }
 }

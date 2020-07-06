@@ -9,6 +9,14 @@
         margin-right: 40px;
         margin-bottom: 40px;
         position: relative;
+        a{
+            text-decoration: none;
+            color: black;
+            transition: .2s;
+        }
+        a:hover{
+            color: green;
+        }
     }
     &__title {
         font-size: 22px;

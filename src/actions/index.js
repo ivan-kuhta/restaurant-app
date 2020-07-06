@@ -17,8 +17,24 @@ const menuError = () => {
     };
 };
 
+const addedToCard = (id) => {
+    return {
+        type: 'ITEM_ADD_TO_CART',
+        payload: id
+    };
+}
+
+const deleteFromCard = (id) => {
+    return {
+        type: 'ITEM_DELETE_FROM_CART',
+        payload: id
+    };
+}
+
 export {
     menuLoaded,
     menuRequested,
-    menuError
+    menuError,
+    addedToCard,
+    deleteFromCard
 };

@@ -1,0 +1,13 @@
+.app:before{
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url('./food-bg.jpg');
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
